@@ -1,0 +1,157 @@
+/* font-face */
+@font-face {
+  font-family: neucha-regular;
+  src: url("../assets/fonts/Neucha-Regular.ttf");
+  font-display: wrap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: OpenSans-regular;
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: OpenSuns-bold;
+  src: url("../assets/fonts/OpenSans-Bold.ttf");
+  font-display: wrap;
+}
+
+/* common style */
+:root {
+  --white: hsl(0deg 0% 100%);
+  --white-80: hsl(31deg 22% 80%);
+  --white-96: hsl(0deg 0% 96%);
+  --light: hsl(48deg 20% 95%);
+  --primary: hsl(32deg 99% 50%);
+  --primary-dark: hsl(30deg 100% 46%);
+  --dark: hsl(0deg 5% 16%);
+  --dark-50: hsl(24deg 2% 55%);
+  --dark-25: hsl(50deg 5% 25%);
+  --brown: hsl(32deg 23% 60%);
+  --link-col: hsl(201deg 85% 42%);
+  --heading-72: 4.5rem;
+  --heading-60: 3.75rem;
+  --heading-52: 3.25rem;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: OpenSans-regular, sans-serif;
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* typography */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: neucha-regular, serif;
+  color: var(--primary);
+  line-height: 1.2em;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--heading-72);
+}
+
+h2 {
+  font-size: var(--heading-60);
+}
+
+h1 span,
+h2 span,
+h3 span {
+  color: var(--dark);
+}
+
+.relative {
+  position: relative;
+}
+
+.py-100 {
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.bg-primary::before {
+  content: "";
+  background: url('../assets/img/background.png'), var(--white-96);
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.bg-img-dark::before {
+  content: "";
+  background: url('../assets/img/background-pattern.png'), hsl(32deg 23% 60%);
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+/* header */
+
+.main-img {
+  position: absolute;
+  top: 55px;
+  right: -290px;
+}
+
+.header-text-content {
+  margin-top: 185px;
+}
+
+.btn {
+  position: relative;
+  top: 24px;
+  padding: 12px 24px;
+  background: var(--primary);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
