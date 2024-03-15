@@ -67,6 +67,7 @@ h4 {
   font-family: neucha-regular, serif;
   color: var(--primary);
   line-height: 1.2em;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -141,7 +142,7 @@ header {
 .main-img {
   position: absolute;
   top: 55px;
-  right: -310px;
+  right: -270px;
 }
 
 .header-text-content {
