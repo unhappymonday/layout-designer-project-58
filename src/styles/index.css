@@ -149,7 +149,7 @@ h3 span {
   inset: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  opacity: 10%;
   z-index: -1;
 }
 
@@ -164,12 +164,12 @@ h3 span {
 header,
 body > article:nth-child(odd) {
   background: var(--white-96);
-  opacity: 0.9;
+  opacity: 90%;
 }
 
 body > article:nth-child(even) {
   background: var(--brown);
-  opacity: 0.9;
+  opacity: 90%;
 }
 
 body > article:nth-child(even) .title-block > * {
