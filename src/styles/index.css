@@ -72,16 +72,15 @@ img {
 h1,
 h2,
 h3,
-h4,
 .card-number,
-.card-title {
+.card-title,
+.title-block * {
   font-family: neucha-regular, serif;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   color: var(--primary);
   line-height: 1.2em;
   font-weight: 400;
@@ -100,10 +99,22 @@ h3 {
   font-size: var(--heading-52);
 }
 
+h4 {
+  padding: 5px 10px 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 16.8px;
+}
+
 h1 span,
 h2 span,
 h3 span {
   color: var(--dark);
+}
+
+.article-preview,
+.card-title {
+  font-size: 34px;
 }
 
 .relative {
@@ -163,7 +174,8 @@ h3 span {
 
 /* header */
 
-header {
+header,
+body > article:nth-child(1) {
   background: var(--white-96);
   opacity: 0.9;
 }
@@ -172,6 +184,7 @@ header {
   position: absolute;
   top: 55px;
   right: -270px;
+  overflow-x: hidden;
 }
 
 .header-text-content {
@@ -240,6 +253,29 @@ iframe {
 }
 
 .card-title {
-  font-size: 34px;
   color: var(--primary);
+}
+
+
+/* articles */
+
+.article-subtitle {
+  margin: 0;
+  font-size: 24px;
+  color: var(--dark-50);
+}
+
+.article-title {
+  color: var(--dark-25);
+}
+
+.article-preview {
+  margin: 30px 0 0;
+  line-height: 40.8px;
+}
+
+.description-title {
+  margin: 100px 0 0;
+  color: var(--white);
+  background: var(--brown);
 }
