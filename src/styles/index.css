@@ -67,6 +67,10 @@ img {
   max-width: 100%;
 }
 
+p > br {
+  padding-bottom: 16px;
+}
+
 /* typography */
 
 h1,
