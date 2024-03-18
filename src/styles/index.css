@@ -100,7 +100,7 @@ h3 {
 }
 
 h4 {
-  padding: 5px 10px 5px;
+  padding: 5px 10px;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 16.8px;
@@ -153,17 +153,6 @@ h3 span {
   z-index: -1;
 }
 
-.bg-img-dark::before {
-  content: "";
-  background: url('../assets/img/background-pattern.png'), hsl(32deg 23% 60%);
-  position: absolute;
-  inset: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  overflow-x: hidden;
-}
-
 .shadow {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
@@ -172,13 +161,23 @@ h3 span {
   color: var(--white);
 }
 
-/* header */
-
 header,
-body > article:nth-child(1) {
+body > article:nth-child(odd) {
   background: var(--white-96);
   opacity: 0.9;
 }
+
+body > article:nth-child(even) {
+  background: var(--brown);
+  opacity: 0.9;
+}
+
+body > article:nth-child(even) .title-block > * {
+  color: var(--white);
+}
+
+/* header */
+
 
 .main-img {
   position: absolute;
@@ -278,4 +277,9 @@ iframe {
   margin: 100px 0 0;
   color: var(--white);
   background: var(--brown);
+}
+
+body > article:nth-child(even) .description-title {
+  color: var(--brown);
+  background: var(--white);
 }
