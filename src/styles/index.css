@@ -385,3 +385,8 @@ footer > div:nth-child(2) a {
   color: var(--link-col);
   text-decoration: underline;
 }
+
+
+#distortion-of-novelty {
+  padding-bottom: 90px;
+}
