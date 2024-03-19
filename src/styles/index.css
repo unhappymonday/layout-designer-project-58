@@ -144,13 +144,26 @@ h3 span {
 
 .bg-primary::before {
   content: "";
-  background: url('../assets/img/background.png');
+  background: url('../assets/img/background.png'), var(--white-96);
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 10%;
   z-index: -1;
+}
+
+.bg-primary-brown::before {
+  content: "";
+  background: url('../assets/img/background.png'), var(--brown);
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .shadow {
@@ -161,11 +174,11 @@ h3 span {
   color: var(--white);
 }
 
-header,
+/* header,
 body > article:nth-child(odd) {
   background: var(--white-96);
   opacity: 90%;
-}
+} */
 
 body > article:nth-child(even) {
   background: var(--brown);
