@@ -154,7 +154,7 @@ h3 span {
 
 .bg-primary-brown::before {
   content: "";
-  background: url('../assets/img/background.png'), var(--brown);
+  background: url('../assets/img/background.png'), hsla(32deg 23% 60% / 90%);
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
@@ -180,10 +180,10 @@ body > article:nth-child(odd) {
   opacity: 90%;
 } */
 
-body > article:nth-child(even) {
+/* body > article:nth-child(even) {
   background: var(--brown);
   opacity: 90%;
-}
+} */
 
 body > article:nth-child(even) .title-block > * {
   color: var(--white);
