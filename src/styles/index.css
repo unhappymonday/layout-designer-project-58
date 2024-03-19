@@ -67,10 +67,6 @@ img {
   max-width: 100%;
 }
 
-p > br {
-  padding-bottom: 16px;
-}
-
 /* typography */
 
 h1,
@@ -182,7 +178,6 @@ body > article:nth-child(even) .title-block > * {
 
 /* header */
 
-
 .main-img {
   position: absolute;
   top: 55px;
@@ -194,12 +189,21 @@ body > article:nth-child(even) .title-block > * {
   margin-top: 185px;
 }
 
+.header-preambula p:first-child {
+  margin-bottom: 0;
+}
+
+.header-preambula p:nth-child(2) {
+  margin-top: 10px;
+}
+
 .btn {
   margin-top: 24px;
   padding: 12px 24px;
   background: var(--primary);
   font-weight: 600;
   color: var(--white);
+  line-height: 160%;
 }
 
 .btn:hover {
@@ -210,11 +214,12 @@ body > article:nth-child(even) .title-block > * {
 
 main {
   position: relative;
-  top: 100px;
 }
 
 main > section:first-child {
+  position: relative;
   text-align: center;
+  top: 100px;
 }
 
 ol {
@@ -238,8 +243,6 @@ iframe {
 }
 
 .section-navigation {
-  position: relative;
-  top: -100px;
   padding: 200px 0 100px;
   background: var(--dark-25);
 }
@@ -256,7 +259,13 @@ iframe {
 }
 
 .card-title {
+  margin: 40px 0 0;
   color: var(--primary);
+  line-height: 40.8px;
+}
+
+.card p:nth-child(3) {
+  margin-bottom: 0;
 }
 
 
@@ -286,4 +295,87 @@ iframe {
 body > article:nth-child(even) .description-title {
   color: var(--brown);
   background: var(--white);
+}
+
+
+/* footer */
+
+footer > .container {
+  padding: 55px;
+  margin-bottom: 60px;
+  background: var(--dark-25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h3 {
+  color: var(--white);
+  font-size: 34px;
+  padding-right: 122px;
+}
+
+form {
+  color: var(--white);
+}
+
+form input {
+  margin-top: 9px;
+  border: none;
+  width: 415px;
+  height: 50px;
+  padding: 15px;
+}
+
+form label {
+  font-size: 18px;
+}
+
+form > div {
+  display: flex;
+
+}
+
+form > p {
+  margin: 0;
+  font-size: 12px;
+}
+
+form > p > a {
+  text-decoration: underline;
+}
+
+input::placeholder {
+  color: #757575;
+}
+
+button {
+  position: relative;
+  background: var(--primary);
+  padding: 0;
+  border: 0;
+  margin-top: 9px;
+  height: 50px;
+  width: 70px;
+}
+
+button::before {
+  content: "";
+  background: url("../assets/img/send.svg");
+  position: absolute;
+  width: 24px;
+  aspect-ratio: 1 / 1;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+}
+
+footer > div:nth-child(2) {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+footer > div:nth-child(2) a {
+  color: var(--link-col);
+  text-decoration: underline;
 }
