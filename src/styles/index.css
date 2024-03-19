@@ -142,9 +142,13 @@ h3 span {
   gap: 30px;
 }
 
+body > article:nth-child(even) {
+  background-color: var(--brown);
+}
+
 .bg-primary::before {
   content: "";
-  background: url('../assets/img/background.png');
+  background: url('../assets/img/background.png') var(--white-96);
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
@@ -161,7 +165,6 @@ h3 span {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
-  z-index: -2;
 }
 
 .mb-0 {
@@ -179,17 +182,16 @@ h3 span {
 header,
 body > article:nth-child(odd) {
   background: var(--white-96);
-  opacity: 80%;
-}
-
-body > article:nth-child(even) {
-  background: var(--brown);
-  opacity: 0.9;
-  z-index: -1;
+  opacity: 90%;
 }
 
 body > article:nth-child(even) .title-block > * {
   color: var(--white);
+}
+
+article > .container {
+  position: relative;
+  z-index: 99;
 }
 
 /* header */
