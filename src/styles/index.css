@@ -161,16 +161,6 @@ body > article:nth-child(odd) {
   opacity: 0.1;
 }
 
-.bg-primary-brown::before {
-  content: "";
-  background: url('../assets/img/background.png');
-  position: absolute;
-  inset: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.1;
-}
-
 .mb-0 {
   margin-bottom: 0;
 }
