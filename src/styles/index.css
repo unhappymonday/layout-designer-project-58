@@ -58,7 +58,8 @@ a {
   display: inline-block;
 }
 
-ol, ol li {
+ol,
+ol li {
   padding: 0;
   list-style: none;
 }
@@ -153,7 +154,7 @@ body > article:nth-child(odd) {
 
 .bg-primary::before {
   content: "";
-  background: url('../assets/img/background.png');
+  background: url("../assets/img/background.png");
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
@@ -339,7 +340,7 @@ form > div {
   display: flex;
 }
 
-form > p {
+.form-link {
   margin: 0;
   font-size: 12px;
 }
@@ -382,7 +383,6 @@ footer > div:nth-child(2) a {
   text-decoration: underline;
 }
 
-
 #ikea-effect,
 #premature-optimization,
 #distortion-of-novelty,
@@ -390,4 +390,3 @@ footer > div:nth-child(2) a {
 #errors-in-planning {
   padding-bottom: 88px;
 }
-
